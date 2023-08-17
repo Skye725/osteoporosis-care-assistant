@@ -1,1 +1,2 @@
-trubrics
+'trubrics[streamlit]'
+
