@@ -62,6 +62,20 @@ def main():
     </div>
     """
     st.components.v1.html(html_code, height=650, scrolling=False)
+    
+    st.write("Please provide your satisfaction rating from 1 to 5:")
+
+    # Create a slider for user to input satisfaction rating
+    satisfaction_rating = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+
+    # Create a button to submit the survey
+    if st.button("Submit"):
+        # Write the satisfaction rating to a file
+        with open("user_research.txt", "a") as f:
+            f.write(str(satisfaction_rating) + "\n")
+        st.success("Thank you for participating in the survey!")
+
+
 
 if __name__ == "__main__":
     main()
