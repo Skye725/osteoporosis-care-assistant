@@ -1,2 +1,3 @@
-'trubrics[streamlit]'
+trubrics==1.4.4
+streamlit-feedba
 
