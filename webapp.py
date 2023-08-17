@@ -67,14 +67,14 @@ def main():
     
     collector = FeedbackCollector(
     component_name="default",
-    email=st.secrets["dmu725@163.com"], # Store your Trubrics credentials in st.secrets:
-    password=st.secrets["613725sw"], # https://blog.streamlit.io/secrets-in-sharing-apps/
+    email=st.secrets["TRUBRICS_EMAIL"], # Store your Trubrics credentials in st.secrets:
+    password=st.secrets["TRUBRICS_PASSWORD"], # https://blog.streamlit.io/secrets-in-sharing-apps/
     )
 
     collector.st_feedback(
-        feedback_type="faces",
-        model="osteoporosis",
-        open_feedback_label="[Optional] Provide additional feedback",
+    feedback_type="thumbs",
+    model="your_model_name",
+    open_feedback_label="[Optional] Provide additional feedback",
     )
 
 if __name__ == "__main__":
