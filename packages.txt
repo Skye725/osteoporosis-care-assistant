@@ -1,2 +1,2 @@
-trubrics==1.4.4
+trubrics==1.4.5
 
