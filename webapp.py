@@ -1,10 +1,6 @@
-# 上下版本。目前在使用
-!pip install 'trubrics[streamlit]'
 import streamlit as st
 import pandas as pd
 import numpy as np
-from trubrics.integrations.streamlit import FeedbackCollector
-
 def main():
     # Add some space above the title to move it up
     # st.markdown("<br><br><br>", unsafe_allow_html=True)
@@ -67,17 +63,19 @@ def main():
     """
     st.components.v1.html(html_code, height=650, scrolling=False)
     
-    collector = FeedbackCollector(
-    component_name="default",
-    email=st.secrets["dmu725@163.com"], # Store your Trubrics credentials in st.secrets:
-    password=st.secrets["613725sw"], # https://blog.streamlit.io/secrets-in-sharing-apps/
-    )
+    st.write("Please provide your satisfaction rating from 1 to 5:")
 
-    collector.st_feedback(
-        feedback_type="faces",
-        model="osteoporosis",
-        open_feedback_label="[Optional] Provide additional feedback",
-    )
+    # Create a slider for user to input satisfaction rating
+    satisfaction_rating = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+
+    # Create a button to submit the survey
+    if st.button("Submit"):
+        # Write the satisfaction rating to a file
+        with open("user_research.txt", "a") as f:
+            f.write(str(satisfaction_rating) + "\n")
+        st.success("Thank you for participating in the survey!")
+
+
 
 if __name__ == "__main__":
     main()
