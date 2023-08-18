@@ -64,9 +64,22 @@ def main():
     st.components.v1.html(html_code, height=650, scrolling=False)
     
     st.write("Please provide your satisfaction rating from 1 to 5:")
+   
+    st.write("Assessment results are accurate")
+    satisfaction_rating1 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
 
-    # Create a slider for user to input satisfaction rating
-    satisfaction_rating = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+    st.write("AI Expert's answers to your questions are accurate")
+    satisfaction_rating2 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+
+    st.write("The system is useful")
+    satisfaction_rating3 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+
+    st.write("The system is easy to use")
+    satisfaction_rating4 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+
+    st.write("The system is flexible")
+    satisfaction_rating5 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+    
 
     # Create a button to submit the survey
     if st.button("Submit"):
