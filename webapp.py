@@ -65,28 +65,20 @@ def main():
     
     st.write("Please provide your satisfaction rating from 1 to 5:")
    
-    st.write("Assessment results are accurate")
-    satisfaction_rating1 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+    survey_questions = [
+            "Have you been diagnosed with osteoporosis?",
+            "Is the assessment accurate?",
+            "Can the expert provide accurate answers?",
+            "Is the system useful?",
+            "Is the system easy to use?"
+        ]
 
-    st.write("AI Expert's answers to your questions are accurate")
-    satisfaction_rating2 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
+    # Loop through each survey question
+    for question in survey_questions:
+        st.write(f"Please provide your satisfaction rating for the following question: {question}")
 
-    st.write("The system is useful")
-    satisfaction_rating3 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
-
-    st.write("The system is easy to use")
-    satisfaction_rating4 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
-
-    st.write("The system is flexible")
-    satisfaction_rating5 = st.slider("Satisfaction Rating", min_value=1, max_value=5, step=1)
-    
-
-    # Create a button to submit the survey
-    if st.button("Submit"):
-        # Write the satisfaction rating to a file
-        with open("user_research.txt", "a") as f:
-            f.write(str(satisfaction_rating1) + "\n")
-        st.success("Thank you for participating in the survey!")
+        # Create a slider for user to input satisfaction rating
+        satisfaction_rating = st.slider(f"{question} (1-5)", min_value=1, max_value=5, step=1)
 
 
 
