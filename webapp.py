@@ -66,16 +66,16 @@ def main():
     st.write("Please provide your satisfaction rating from 1 to 5:")
    
     survey_questions = [
-            "Have you been diagnosed with osteoporosis?",
-            "Is the assessment accurate?",
-            "Can the expert provide accurate answers?",
-            "Is the system useful?",
-            "Is the system easy to use?"
+            "The assessment result is accurate",
+            "The AI expert can provide accurate answers",
+            "The system is useful",
+            "The system is easy to use",
+            "The system is flexible"
         ]
 
     # Loop through each survey question
     for question in survey_questions:
-        st.write(f"Please provide your satisfaction rating for the following question: {question}")
+        # st.write(f"Please provide your satisfaction rating for the following question: {question}")
 
         # Create a slider for user to input satisfaction rating
         satisfaction_rating = st.slider(f"{question} (1-5)", min_value=1, max_value=5, step=1)
