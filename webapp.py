@@ -85,7 +85,7 @@ def main():
     if st.button("Submit"):
         # Write the satisfaction rating to a file
         with open("user_research.txt", "a") as f:
-            f.write(str(satisfaction_rating) + "\n")
+            f.write(str(satisfaction_rating1) + "\n")
         st.success("Thank you for participating in the survey!")
 
 
