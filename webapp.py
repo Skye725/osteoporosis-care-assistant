@@ -63,7 +63,7 @@ def main():
     """
     st.components.v1.html(html_code, height=650, scrolling=False)
     
-    # st.write("Please provide your satisfaction rating from 1 to 5:")
+    st.write("After using, we sincerely invite you to participate in our user survey！")
    
     # survey_questions = [
     #         "The assessment result is accurate",
