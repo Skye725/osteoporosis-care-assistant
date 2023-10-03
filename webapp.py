@@ -54,9 +54,9 @@ def main():
             <df-messenger
                 df-cx="true"
                 location="us-central1"
-                chat-title="Osteoporosis Care Assistant"
-                agent-id="89b18026-b1f1-4e60-bb15-607bfd386d97"
-                language-code="en"
+                chat-title="OCA_CN"
+                agent-id="3f378785-8de5-4e10-8e10-54dcc24ed118"
+                language-code="zh-cn"
             ></df-messenger>
         </div>
     </div>
