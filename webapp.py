@@ -37,7 +37,7 @@ def main():
         unsafe_allow_html=True,
     )
     
-    st.title('Osteoporosis Care Assistant')
+    st.title('骨质疏松智能小护士')
 
     html_code = """
     <div class="container">
@@ -47,7 +47,7 @@ def main():
             <br>
             <p style="font-size: 20px;">我是一个帮助您了解骨质疏松的聊天机器人.</p>
             <br>
-            <p style="font-size: 20px;">点击按钮开始和我聊天吧!</p>
+            <p style="font-size: 20px;">点击按钮并说"你好"，开始和我聊天吧!</p>
         </div>
         <div class="df-messenger">
             <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
