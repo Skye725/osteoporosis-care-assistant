@@ -63,7 +63,7 @@ def main():
     """
     st.components.v1.html(html_code, height=650, scrolling=False)
     
-    st.write("After using, we sincerely invite you to participate in our user survey！")
+    # st.write("After using, we sincerely invite you to participate in our user survey！")
    
     # survey_questions = [
     #         "The assessment result is accurate",
@@ -79,17 +79,18 @@ def main():
 
     #     # Create a slider for user to input satisfaction rating
     #     satisfaction_rating = st.slider(f"{question} (1-5)", min_value=1, max_value=5, step=1)
-    st.components.v1.html(
-        """
-        <div data-tf-widget="FmSIrjqJ" data-tf-opacity="100"
-             data-tf-iframe-props="title=User Research Form for Osteoporosis Chatbot App"
-             data-tf-transitive-search-params data-tf-medium="snippet"
-             style="width:100%;height:500px;">
-        </div>
-        <script src="//embed.typeform.com/next/embed.js"></script>
-        """,
-        height=550
-    )
+    
+    # st.components.v1.html(
+    #     """
+    #     <div data-tf-widget="FmSIrjqJ" data-tf-opacity="100"
+    #          data-tf-iframe-props="title=User Research Form for Osteoporosis Chatbot App"
+    #          data-tf-transitive-search-params data-tf-medium="snippet"
+    #          style="width:100%;height:500px;">
+    #     </div>
+    #     <script src="//embed.typeform.com/next/embed.js"></script>
+    #     """,
+    #     height=550
+    # )
 
 
 
