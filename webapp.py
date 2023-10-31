@@ -43,11 +43,11 @@ def main():
     <div class="container">
         <div class="content">
             <!-- Your content goes here -->
-            <p style="font-size: 24px;">Hello! Here is your Osteoporosis Care Assistant!</p>
+            <p style="font-size: 24px;">你好！我是你的骨质疏松小护士</p>
             <br>
-            <p style="font-size: 20px;">I am a chatbot that can help you with osteoporosis.</p>
+            <p style="font-size: 20px;">我是一个帮助您了解骨质疏松的聊天机器人.</p>
             <br>
-            <p style="font-size: 20px;">Click below to start chatting with me!</p>
+            <p style="font-size: 20px;">点击按钮开始和我聊天吧!</p>
         </div>
         <div class="df-messenger">
             <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
