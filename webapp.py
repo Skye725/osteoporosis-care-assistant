@@ -51,13 +51,6 @@ def main():
         </div>
         <div class="df-messenger">
             <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
-            <script>
-            window.addEventListener('dfMessengerLoaded', function (event) {
-            const dfMessenger = document.querySelector('df-messenger');
-            const openText = ('你好');
-            dfMessenger.renderCustomText(openText, false);
-            });
-            </script>
             <df-messenger
                 df-cx="true"
                 location="us-central1"
