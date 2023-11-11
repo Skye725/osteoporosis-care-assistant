@@ -51,10 +51,17 @@ def main():
         </div>
         <div class="df-messenger">
             <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+            <script>
+            window.addEventListener('dfMessengerLoaded', function (event) {
+                const dfMessenger = document.querySelector('df-messenger');
+                const openText = ('你好');
+            dfMessenger.renderCustomText(openText);
+            });
+            </script>
             <df-messenger
                 df-cx="true"
                 location="us-central1"
-                chat-title="OCA_CN"
+                chat-title="智能小护"
                 agent-id="3f378785-8de5-4e10-8e10-54dcc24ed118"
                 language-code="zh-cn"
             ></df-messenger>
