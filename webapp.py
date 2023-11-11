@@ -54,8 +54,7 @@ def main():
             <script>
             window.addEventListener('dfMessengerLoaded', function (event) {
                 const dfMessenger = document.querySelector('df-messenger');
-                const openText = ('你好');
-            dfMessenger.renderCustomText(openText, False);
+            dfMessenger.renderCustomText('你好', false);
             });
             </script>
             <df-messenger
