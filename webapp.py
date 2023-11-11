@@ -53,8 +53,8 @@ def main():
             <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
             <script>
             window.addEventListener('dfMessengerLoaded', function (event) {
-                const dfMessenger = document.querySelector('df-messenger');
-            dfMessenger.renderCustomText('你好', false);
+            const dfMessenger = document.querySelector('df-messenger');
+            dfMessenger.sendQuery('你好');
             });
             </script>
             <df-messenger
