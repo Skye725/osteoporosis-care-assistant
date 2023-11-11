@@ -64,7 +64,7 @@ def main():
                 chat-title="智能小护"
                 agent-id="3f378785-8de5-4e10-8e10-54dcc24ed118"
                 language-code="zh-cn"
-                intent="Default Welcome Intent"
+                intent="Welcome"
             ></df-messenger>
         </div>
     </div>
